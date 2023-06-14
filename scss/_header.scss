@@ -1,0 +1,27 @@
+.header {
+    border: 1px solid black;
+    padding: 1.5rem;
+    background-color: $header-bkg;
+
+    &__ico {
+        color: $logo2;
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__ttl {
+        margin-right: auto;
+
+        &--clr1 {
+            color: $logo1;
+        }
+
+        &--clr2 {
+            color: $logo2;
+        }
+    }
+}

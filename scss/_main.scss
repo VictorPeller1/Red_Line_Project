@@ -1,0 +1,19 @@
+@import "_variables";
+
+body {
+    background-color: $main-bkg;
+}
+
+@media (min-width:768px) {
+
+    .body-container {
+        margin: 0 2rem;
+    }
+}
+
+
+@media (max-width:768px) {
+    .body-container {
+        margin: 0;
+    }
+}

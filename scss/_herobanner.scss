@@ -1,0 +1,69 @@
+@import "_variables";
+
+.herobanner {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+        width: 100%;
+        height: 20rem;
+        object-fit: contain;
+    }
+
+    &__heading {
+        display: flex;
+        background-color: $heading-bkg;
+        padding: 0.3rem;
+    }
+
+    &__exp {
+        text-align: center;
+        line-height: 2;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media (min-width:768px) {
+    .herobanner {
+        flex-direction: row;
+        height: 20rem;
+
+        &__logo {
+            width: 30%;
+        }
+
+        &__heading {
+            flex-direction: column;
+            width: 67%;
+        }
+
+        &__img {
+            height: 16rem;
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .herobanner {
+        &__heading {
+            height: 9.2rem
+        }
+
+        &__img {
+            height: 8.5rem;
+            width: 110%;
+        }
+    }
+}
+
+
+;

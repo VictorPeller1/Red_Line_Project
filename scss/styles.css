@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+:root {
+  font-size: 16px;
+}
+
+* {
+  font-family: "Comfortaa", cursive;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #2D2616;
+}
+
+@media (min-width: 768px) {
+  .body-container {
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .body-container {
+    margin: 0;
+  }
+}
+.header {
+  border: 1px solid black;
+  padding: 1.5rem;
+  background-color: black;
+}
+.header__ico {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.header__nav {
+  display: flex;
+}
+.header__ttl {
+  margin-right: auto;
+}
+.header__ttl--clr1 {
+  color: red;
+}
+.header__ttl--clr2 {
+  color: white;
+}
+
+.herobanner {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.herobanner__logo {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.herobanner__heading {
+  display: flex;
+  background-color: #694b16;
+  padding: 0.3rem;
+}
+.herobanner__exp {
+  text-align: center;
+  line-height: 2;
+  font-size: 1.5rem;
+  color: white;
+}
+.herobanner__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .herobanner {
+    flex-direction: row;
+    height: 20rem;
+  }
+  .herobanner__logo {
+    width: 30%;
+  }
+  .herobanner__heading {
+    flex-direction: column;
+    width: 67%;
+  }
+  .herobanner__img {
+    height: 16rem;
+  }
+}
+@media (max-width: 768px) {
+  .herobanner__heading {
+    height: 9.2rem;
+  }
+  .herobanner__img {
+    height: 8.5rem;
+    width: 110%;
+  }
+}/*# sourceMappingURL=styles.css.map */
