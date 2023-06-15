@@ -55,8 +55,7 @@ body {
 .herobanner__logo {
   width: 100%;
   height: 20rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .herobanner__heading {
   display: flex;
@@ -71,8 +70,7 @@ body {
 }
 .herobanner__img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -105,4 +103,6 @@ body {
   background: yellow;
   padding: 1rem;
   margin: 1rem;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
