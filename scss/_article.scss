@@ -1,15 +1,15 @@
 
 .article {
     display: flex; 
+    border-radius: 1rem;
     flex-direction: column;
-    border: 1px solid white;
     margin-top: 3rem;
-
+    background-image: url(../assets/img/main/background-main-article.jpg);
     &__ttl{
-      color: $article-txt;
+    color: $article-txt;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     }
 
     &__txt{
@@ -22,6 +22,13 @@
 .card-container {
   display: flex;
   justify-content: space-around;
+}
+
+@media (max-width:768px) {
+  .card-container{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card {
@@ -47,6 +54,8 @@
   }
 }
 
-@media (min-width:768px) {
-    
+@media (max-width:768px) {
+  .card{
+    width: 90%;
+  }
 }

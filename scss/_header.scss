@@ -1,8 +1,10 @@
 .header {
-    border: 1px solid black;
+    border-bottom: 1px solid $article-txt;
     padding: 1.5rem;
     background-color: $header-bkg;
-
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
     &__ico {
         color: $logo2;
         font-size: 1.5rem;
