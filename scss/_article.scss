@@ -5,7 +5,8 @@
     flex-direction: column;
     margin-top: 3rem;
     background-image: url(../assets/img/main/background-main-article.jpg);
-    &__ttl{
+    
+  &__ttl{
     color: $article-txt;
     font-size: 2rem;
     text-align: center;
@@ -35,7 +36,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid red;
-  width: 45%;
+  width: 30%;
   height: 22rem;
   padding-top: 1rem;
   border-radius: 1rem 1rem 0 0;
@@ -57,5 +58,6 @@
 @media (max-width:768px) {
   .card{
     width: 90%;
+    margin: 1rem;
   }
 }

@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
-:root {
-  font-size: 16px;
-}
-
-* {
-  font-family: "Comfortaa", cursive;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
   background-color: #2D2616;
 }
@@ -24,10 +13,41 @@ body {
     margin: 0;
   }
 }
+:root {
+  font-size: 16px;
+}
+
+* {
+  font-family: "Comfortaa", cursive;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.footer {
+  display: flex;
+  display: inline;
+}
+.footer__lst {
+  display: inline;
+  display: flex;
+}
+.footer__lnk {
+  display: flex;
+  display: inline;
+}
+
 .header {
-  border: 1px solid black;
+  border-bottom: 1px solid #fff;
   padding: 1.5rem;
   background-color: black;
+  position: sticky;
+  top: 0;
+  opacity: 0.8;
 }
 .header__ico {
   color: white;
@@ -47,6 +67,64 @@ body {
   color: white;
 }
 
+.article {
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  margin-top: 3rem;
+  background-image: url(../assets/img/main/background-main-article.jpg);
+}
+.article__ttl {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.article__txt {
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 30%;
+  height: 22rem;
+  padding-top: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+.card__img {
+  height: 100%;
+  margin: 0 1rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.card__ttl {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    margin: 1rem;
+  }
+}
 .herobanner {
   margin-top: 1rem;
   display: flex;
@@ -55,8 +133,7 @@ body {
 .herobanner__logo {
   width: 100%;
   height: 20rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .herobanner__heading {
   display: flex;
@@ -71,8 +148,7 @@ body {
 }
 .herobanner__img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -85,7 +161,7 @@ body {
   }
   .herobanner__heading {
     flex-direction: column;
-    width: 67%;
+    width: 100%;
   }
   .herobanner__img {
     height: 16rem;
@@ -100,9 +176,6 @@ body {
     width: 110%;
   }
 }
-.article {
-  border: 10px solid black;
-  background: yellow;
-  padding: 1rem;
-  margin: 1rem;
-}/*# sourceMappingURL=styles.css.map */
+
+
+/*# sourceMappingURL=styles.css.map */
