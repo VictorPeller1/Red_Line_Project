@@ -1,8 +1,7 @@
-@import "main";
-@import "reset";
+@import "_reset";
+@import "_main";
+@import "_variables";
+@import "_header";
+@import "_herobanner";
+@import "_article";
 @import "footer";
-@import "header";
-@import "article";
-@import "variables";
-@import "herobanner";
-/*# sourceMappingURL=styles.scss.map */
