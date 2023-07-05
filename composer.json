@@ -1,0 +1,10 @@
+{
+    "name": "vendor/name",
+    "authors": [
+        {
+            "name": "Victor Pellerin",
+            "email": "97453072+VictorPeller1@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
