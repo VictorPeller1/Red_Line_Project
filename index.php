@@ -1,3 +1,21 @@
+<?php
+require_once './vendor/autoload.php';
+require './includes/_database.php';
+session_start();
+?>
+
+<?php
+$query = $dbCo->prepare("SELECT article_title FROM article");
+$query->execute();
+$result = $query->fetchAll();
+var_dump($result);
+?>
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,26 +32,16 @@
   <link rel="stylesheet" href="scss/style.css" />
 </head>
 
+
+
 <body>
-  <header class="header">
-    <nav class="header__nav">
-      <h1 class="header__ttl">
-        <span class="header__ttl--clr2">Yo</span>
-        <span class="header__ttl--clr1">ka</span>
-        <span class="header__ttl--clr2">mi</span>
-      </h1>
-      <i class="header__ico fa-solid fa-magnifying-glass"></i>
-      <i class="header__ico fa-solid fa-user-ninja"></i>
-    </nav>
-  </header>
+
+  <?= include 'includes/_header.php'; ?>
+
   <section class="body-container">
-    <article class="herobanner">
-      <img class="herobanner__logo" src="./assets/logo/yokami_logo_white.png" alt="yokami logo">
-      <div class="herobanner__heading">
-        <p class="herobanner__exp">Découvrez la mythologie Japonaise</p>
-        <img class="herobanner__img" src="./assets/img/main/hero-banner.jpg" alt="">
-      </div>
-    </article>
+
+    <?= include 'includes/_herobanner.php'; ?>
+
     <article class="article">
       <h2 class="article__ttl">Yōkais</h2>
       <p class="article__txt"> Les yōkai (妖怪, « esprit », « fantôme », « démon », « apparition étrange ») sont un type de créatures surnaturelles dans le folklore japonais. Ils sont souvent représentés comme des esprits malfaisants ou simplement malicieux démontrant les tracas quotidiens ou inhabituels. </p>

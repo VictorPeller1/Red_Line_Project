@@ -1,10 +1,11 @@
 {
-    "name": "vendor/name",
-    "authors": [
-        {
-            "name": "Victor Pellerin",
-            "email": "97453072+VictorPeller1@users.noreply.github.com"
-        }
-    ],
-    "require": {}
+    "name": "stagiaire/red_line_project",
+    "description": "project",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+        "ehime/hello-world": "^1.0",
+        "guzzlehttp/guzzle": "7.3.0",
+        "vlucas/phpdotenv": "^5.5"
+    }
 }
