@@ -24,7 +24,7 @@ if (!empty($_POST['someone_name']) && !empty($_POST['someone_email']) && !empty(
     $query = $dbCo->prepare('SELECT * FROM someone WHERE someone_name = :someone_name AND someone_email = :someone_email AND someone_pwd = :someone_pwd');
     $query->bindValue(':someone_email', $someone_email);
     $query->bindValue(':someone_pwd', $someone_pwd);
-    $result = $query->fetch(PDO::FETCH_ASSOC);
+    $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
     var_dump($result);
 
@@ -68,6 +68,7 @@ if (!empty($_POST['someone_name']) && !empty($_POST['someone_email']) && !empty(
     <input type="submit" name="valider" value="Valider">
     <br>
 </form>
+<a href="./register.php">Don't have an account yet ?</a>
 
 <?php
 

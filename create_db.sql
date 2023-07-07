@@ -1,5 +1,4 @@
 CREATE DATABASE yokami;
-
 USE yokami;
 
 CREATE TABLE category (
@@ -20,7 +19,7 @@ CREATE TABLE someone (
    someone_name VARCHAR(50),
    someone_email VARCHAR(50),
    someone_pwd VARCHAR(50),
-   someone_date_creation_account VARCHAR(50), -- put by DEFAULT -> current_timestamp()
+   someone_date_creation_account DATETIME DEFAULT CURRENT_TIMESTAMP,
    someone_role VARCHAR(50),
    PRIMARY KEY(Id_someone)
 );
