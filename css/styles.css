@@ -10,8 +10,14 @@
   margin: 0;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (min-width: 768px) {

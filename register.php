@@ -64,16 +64,17 @@ if (isset($_POST['valider'])) {
 
 <?= include 'includes/_header.php'; ?>
 
-<form style="border: 1px solid black;" action="" method="post" data-form-id="">
+<form action="register.php" method="post">
     <label for="">Name:</label>
-    <input type="text" name="someone_name" value="">
+    <input type="text" name="someone_name">
     <br>
     <label for="">Email:</label>
-    <input type="text" name="someone_email" value="">
+    <input type="text" name="someone_email">
     <br>
     <label for="">Password:</label>
-    <input type="password" name="someone_pwd" value="">
+    <input type="password" name="someone_pwd">
     <br>
     <input type="submit" name="valider" value="Valider">
     <br>
+    <a href="login.php">Already an account ?</a>
 </form>

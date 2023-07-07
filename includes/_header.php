@@ -1,11 +1,11 @@
 <header class="header">
     <nav class="header__nav">
-        <h1 class="header__ttl">
+        <a href="/Red_Line_Project/index.php" class="header__ttl">
             <span class="header__ttl--clr2">Yo</span>
             <span class="header__ttl--clr1">ka</span>
             <span class="header__ttl--clr2">mi</span>
-        </h1>
+        </a>
         <i class="header__ico fa-solid fa-magnifying-glass"></i>
-        <i class="header__ico fa-solid fa-user-ninja"></i>
+        <a href="/Red_Line_Project/register.php"><i href class="header__ico fa-solid fa-user-ninja"></i></a>
     </nav>
 </header>
