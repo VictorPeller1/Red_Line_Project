@@ -1,7 +1,10 @@
 <?php
 require_once './vendor/autoload.php';
 require './includes/_database.php';
+
+$_SERVER['HTTP_REFERER'];
 session_start();
+$_SESSION['token'] = md5(uniqid(mt_rand(), true));
 ?>
 
 <?php
