@@ -1,5 +1,7 @@
 
-INSERT INTO article (id_article, article_title, article_content, article_date, article_img)
-VALUES (1, 'title1', 'blabla', '2023-06-27 06:00:00', 'https://www.lejapondemax.com/uploads/1/0/3/7/103751148/amaterasu_1_orig.jpg'),
-       (2, 'title2', 'blablabla', '2023-06-28 14:30:00', 'https://www.lejapondemax.com/uploads/1/0/3/7/103751148/amaterasu_1_orig.jpg'),
-       (3, 'title3', 'blablablabla','2023-06-29 16:45:00', 'https://www.lejapondemax.com/uploads/1/0/3/7/103751148/amaterasu_1_orig.jpg');
+INSERT INTO article (id_article, article_title, article_content, article_date, article_img, Id_category)
+VALUES (1, 'Kappa', 'Description du Kappa', '', 'https://contactjeunespageslaw.files.wordpress.com/2020/11/kappa.png', 0),
+       (2, 'Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       (3, 'Amaterasu', 'Description d Amaterasu', '', 'https://www.lejapondemax.com/uploads/1/0/3/7/103751148/amaterasu_1_orig.jpg', 1),
+       (4, 'Hachiman', 'Description d Hachiman', '', 'https://upload.wikimedia.org/wikipedia/commons/2/22/S%C5%8Dgy%C5%8D_Hachiman.jpg', 1),
+    
