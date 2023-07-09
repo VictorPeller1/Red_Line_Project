@@ -27,8 +27,9 @@ CREATE TABLE someone (
 CREATE TABLE article (
    Id_article INT AUTO_INCREMENT,
    article_title VARCHAR(50),
-   article_content VARCHAR(50),
+   article_content VARCHAR(500),
    article_date DATE,
+   article_img VARCHAR(200),
    Id_Validation INT NOT NULL,
    Id_category INT NOT NULL,
    Id_someone INT NOT NULL,

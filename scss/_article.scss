@@ -1,24 +1,23 @@
-
 .article {
-    display: flex; 
-    border-radius: 1rem;
-    flex-direction: column;
-    margin-top: 3rem;
-    background-image: url(../assets/img/main/background-main-article.jpg);
-    
-  &__ttl{
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  margin-top: 3rem;
+  background-image: url(../assets/img/main/background-main-article.jpg);
+
+  &__ttl {
     color: $article-txt;
     font-size: 2rem;
     text-align: center;
     margin: 1rem 0;
-    }
+  }
 
-    &__txt{
+  &__txt {
     color: $article-txt;
     font-size: 1.25rem;
     margin: 2rem;
-    }
   }
+}
 
 .card-container {
   display: flex;
@@ -26,7 +25,7 @@
 }
 
 @media (max-width:768px) {
-  .card-container{
+  .card-container {
     flex-direction: column;
     align-items: center;
   }
@@ -42,21 +41,23 @@
   border-radius: 1rem 1rem 0 0;
   margin-bottom: 1rem;
   background: $article-txt;
-  
-  &__img{
-  height: 100%;
-  margin: 0 1rem;
-  object-fit: cover ;
-  border-radius: 1rem 1rem 0 0;
+
+  &__img {
+    height: 100%;
+    margin: 0 1rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1rem 1rem 0 0;
   }
-  &__ttl{
+
+  &__ttl {
     font-size: 2rem;
     text-align: center;
   }
 }
 
 @media (max-width:768px) {
-  .card{
+  .card {
     width: 90%;
     margin: 1rem;
   }
