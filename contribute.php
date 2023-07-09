@@ -49,7 +49,7 @@ if (isset($_POST['valider'])) {
     <input type="text" name="article_title">
     <br>
     <label for="">Description :</label>
-    <input type="text" name="article_content">
+    <textarea type="text" name="article_content"></textarea>
     <br>
     <label for="">Url de l'image :</label>
     <input type="text" name="article_img">
