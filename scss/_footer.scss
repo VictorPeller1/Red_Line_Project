@@ -1,15 +1,16 @@
 .footer {
 
   display: flex;
-  display: inline;
-  &__lst{
-  
-  display: inline;
-  display: flex;
-  }
-  &__lnk{
-  display: flex;
 
-  display: inline;
+  &__lst {
+
+
+    display: flex;
+  }
+
+  &__lnk {
+    display: flex;
+
+
   }
 }

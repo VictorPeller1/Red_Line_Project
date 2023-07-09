@@ -154,6 +154,8 @@ a {
   margin: 0 1rem;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   border-radius: 1rem 1rem 0 0;
 }
 .card__ttl {
@@ -169,15 +171,12 @@ a {
 }
 .footer {
   display: flex;
-  display: inline;
 }
 .footer__lst {
-  display: inline;
   display: flex;
 }
 .footer__lnk {
   display: flex;
-  display: inline;
 }
 
 .login {
