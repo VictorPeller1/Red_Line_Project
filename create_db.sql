@@ -7,7 +7,7 @@ CREATE TABLE category (
    PRIMARY KEY(Id_category)
 );
 
-CREATE TABLE Validation (
+CREATE TABLE validation (
    Id_Validation INT AUTO_INCREMENT,
    validation_state VARCHAR(50),
    validation_date VARCHAR(50),

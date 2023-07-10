@@ -7,6 +7,7 @@ session_start();
 //-----------------------------------------------------------------------------------------------------------------------------
 
 if (isset($_POST['valider'])) {
+    $someone_name = $_POST['someone_name'];
     $someone_email = $_POST['someone_email'];
     $someone_pwd = $_POST['someone_pwd'];
 
@@ -66,10 +67,13 @@ if (isset($_POST['valider'])) {
 <?= include 'includes/_header.php'; ?>
 
 <form action="register.php" method="post">
-    <label for="">Email:</label>
+    <label for="">Nom :</label>
+    <input type="text" name="someone_name">
+    <br>
+    <label for="">Email :</label>
     <input type="text" name="someone_email">
     <br>
-    <label for="">Password:</label>
+    <label for="">Password :</label>
     <input type="password" name="someone_pwd">
     <br>
     <input type="submit" name="valider" value="Valider">
