@@ -10,7 +10,8 @@ if (isset($_POST['valider'])) {
     $someone_email = $_POST['someone_email'];
     $someone_pwd = $_POST['someone_pwd'];
 
-    $mySQL = "INSERT INTO `someone` (`someone_name`, `someone_email`, `someone_pwd`) VALUES (:someone_name, :someone_email, :someone_pwd)";
+    $mySQL = "INSERT INTO `someone` (`someone_name`, `someone_email`, `someone_pwd`)
+     VALUES (:someone_name, :someone_email, :someone_pwd)";
     $query = $dbCo->prepare($mySQL);
     $query->bindParam(':someone_name', $someone_name);
     $query->bindParam(':someone_email', $someone_email);
@@ -18,6 +19,7 @@ if (isset($_POST['valider'])) {
     $response = $query->execute();
     if ($response) {
         echo "L'inscription est réussie";
+        header("Location: contribute.php");
     } else {
         echo "Erreur lors de l'inscription";
     }

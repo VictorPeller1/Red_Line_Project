@@ -32,7 +32,7 @@ if (isset($_POST['login'])) {
         $_SESSION['user_id'] = $user['id'];
         echo "Authentification réussie. Redirection vers la page d'accueil...";
         // Redirigez l'utilisateur vers la page d'accueil ou une autre page sécurisée
-        header("Location: index.php");
+        header("Location: contribute.php");
         exit;
     } else {
         // Authentification échouée
