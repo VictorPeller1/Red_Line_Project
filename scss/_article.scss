@@ -40,12 +40,14 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 70%;
   height: 22rem;
   padding-top: 1rem;
   border-radius: 1rem 1rem 0 0;
-  margin-bottom: 1rem;
-  background: white;
+  margin-bottom: 3rem;
+  background: $card-bkg;
+  box-shadow: 22px 11px 50px 6px #000000;
+
   &__img {
     height: 100%;
     margin: 0 1rem;
@@ -63,9 +65,12 @@
   }
 }
 
-@media (max-width:768px) {
-  .card {
-    width: 90%;
-    margin: 1rem;
+@media (min-width:768px) {
+  .article {
+    margin: 3rem;
+  }
+
+  .card{
+    width: 30%;
   }
 }

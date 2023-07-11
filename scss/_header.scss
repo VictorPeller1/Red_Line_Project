@@ -4,6 +4,8 @@
     background-color: $header-bkg;
     position: sticky;
     top: 0;
+    opacity: 0.9;
+
     &__ico {
         color: $logo2;
         font-size: 2rem;

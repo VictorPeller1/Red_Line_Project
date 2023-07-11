@@ -36,6 +36,7 @@ ul, li, a {
   background-color: black;
   position: sticky;
   top: 0;
+  opacity: 0.9;
 }
 .header__ico {
   color: white;
@@ -150,12 +151,13 @@ ul, li, a {
 .card {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 70%;
   height: 22rem;
   padding-top: 1rem;
   border-radius: 1rem 1rem 0 0;
-  margin-bottom: 1rem;
-  background: white;
+  margin-bottom: 3rem;
+  background: #a9a9a9;
+  box-shadow: 22px 11px 50px 6px #000000;
 }
 .card__img {
   height: 100%;
@@ -172,20 +174,28 @@ ul, li, a {
   margin: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .article {
+    margin: 3rem;
+  }
   .card {
-    width: 90%;
-    margin: 1rem;
+    width: 30%;
   }
 }
 .footer {
   display: flex;
-  background-color: black;
+  height: 2rem;
 }
 .footer__lst {
+  height: 2rem;
   display: flex;
+  background-color: black;
 }
 .footer__lnk {
+  font-size: 1rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
   display: flex;
 }

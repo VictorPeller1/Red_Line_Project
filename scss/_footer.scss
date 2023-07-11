@@ -1,15 +1,19 @@
 .footer {
 
   display: flex;
-  background-color: black;
-
+  height: 2rem;
+  
   &__lst {
-
-
+    height: 2rem;
     display: flex;
+    background-color: black;
   }
 
   &__lnk {
+    font-size: 1rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     color:white;
     display: flex;
 

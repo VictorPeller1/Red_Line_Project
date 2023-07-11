@@ -34,11 +34,11 @@ $resultsKami = $query->fetchAll();
 
 <body>
 
-  <?= include 'includes/_header.php'; ?>
+  <?php include 'includes/_header.php' ?>
 
   <section class="body-container">
 
-    <?= include 'includes/_herobanner.php'; ?>
+    <?php include 'includes/_herobanner.php' ?>
 
     <article class="article">
       <h2 class="article__ttl">Yōkais</h2>
@@ -126,13 +126,8 @@ $resultsKami = $query->fetchAll();
 
 
 
+<?php include 'includes/_footer.php'?>
 
-  <footer class "footer">
-    <ul class="footer__lst">
-      <a class="footer__lnk">Mentions Légales</a>
-      <a class="footer__lnk">CGV</a>
-    </ul>
-  </footer>
   <script src="script.js"></script>
 </body>
 
