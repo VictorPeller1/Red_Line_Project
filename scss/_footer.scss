@@ -1,6 +1,7 @@
 .footer {
 
   display: flex;
+  background-color: black;
 
   &__lst {
 
@@ -9,6 +10,7 @@
   }
 
   &__lnk {
+    color:white;
     display: flex;
 
 
