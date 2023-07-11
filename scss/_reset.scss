@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-
+@import '_variables';
 :root {
     font-size: 16px;
 }
@@ -11,12 +11,8 @@
     margin: 0;
 }
 
-ul,
-li {
+ul,li,a {
     list-style-type: none;
-}
-
-a {
     text-decoration: none;
     color: inherit;
 }

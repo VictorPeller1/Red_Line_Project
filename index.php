@@ -1,6 +1,7 @@
 <?php
 require_once './vendor/autoload.php';
 require './includes/_database.php';
+include 'includes/_head.php';
 
 session_start();
 $_SESSION['token'] = md5(uniqid(mt_rand(), true));
@@ -19,31 +20,15 @@ $resultsKami = $query->fetchAll();
 
 // var_dump($results);
 
-// foreach ($results as $result) {
+// foreach ($resultsKami as $result) {
 // echo '<li>
 //  <span data-name-id="' . $result['article_title'] . '"></span>
 //  <img src="' . $result['article_img'] . '"></img>
 //  </li>';
-// }
+//}
 ?>
 
 
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yokami</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <script src="https://kit.fontawesome.com/720cbc824f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="scss/style.css" />
-</head>
 
 
 
@@ -63,10 +48,11 @@ $resultsKami = $query->fetchAll();
           <img class="card__img" src="<?= $resultsYokai[0]['article_img'] ?>" alt="">
           <li class="card__ttl"><?= $resultsYokai[0]['article_title'] ?></li>
         </a>
-        <ul class="card">
-          <img class="card__img" src=" <?= $resultsYokai[1]['article_img'] ?>" alt="">
-          <p class="card__ttl"><?= $resultsYokai[1]['article_title'] ?></p>
-        </ul>
+        
+        <a href="article.php" class="card">
+            <img class="card__img" src=" <?= $resultsYokai[1]['article_img'] ?>" alt="">
+            <p class="card__ttl"><?= $resultsYokai[1]['article_title'] ?></p>
+</a>
     </article>
 
     <article class="article">
@@ -74,17 +60,14 @@ $resultsKami = $query->fetchAll();
       <p class="article__txt"> Un kami (神) est une divinité ou un esprit vénéré dans la religion shintoïste. Leur équivalent chinois est shen. Les kamis sont la plupart du temps des éléments de la nature, des animaux ou des forces créatrices de l'univers, mais peuvent aussi être des esprits de personnes décédées1. Beaucoup de kamis sont considérés comme les anciens ancêtres des clans, et il arrivait que certains de leurs membres ayant incarné de leur vivant les valeurs et vertus d'un kami deviennent eux-mêmes des kamis après leur mort. </p>
       <div class="card-container">
 
-        <ul class="card">
-
-
-
+        <a href="article.php" class="card">
           <img class="card__img" src="<?= $resultsKami[0]['article_img'] ?>" alt="">
           <p class="card__ttl"><?= $resultsKami[0]['article_title'] ?></p>
-        </ul>
-        <div class="card">
+        </a>
+        <a href="article.php" class="card">
           <img class="card__img" src=" <?= $resultsKami[1]['article_img'] ?>" alt="">
           <p class="card__ttl"><?= $resultsKami[1]['article_title'] ?></p>
-        </div>
+        </a>
     </article>
 
   </section>
