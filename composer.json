@@ -1,11 +1,18 @@
 {
-    "name": "stagiaire/red_line_project",
-    "description": "project",
-    "type": "project",
+    "name": "vicool/red_line_project",
+    "autoload": {
+        "psr-4": {
+            "Vicool\\RedLineProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VictorPeller1",
+            "email": "victorpellerin14@gmail.com"
+        }
+    ],
     "minimum-stability": "stable",
     "require": {
-        "ehime/hello-world": "^1.0",
-        "guzzlehttp/guzzle": "7.3.0",
         "vlucas/phpdotenv": "^5.5"
     }
 }

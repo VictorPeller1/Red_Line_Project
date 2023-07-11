@@ -20,3 +20,4 @@ try {
   die('Unable to connect to the database.
 ' . $e->getMessage());
 }
+?>
