@@ -5,7 +5,8 @@
   border-radius: 1rem;
   flex-direction: column;
   margin-top: 3rem;
-  // background-image: url(../assets/img/main/background-main-article.jpg);
+  background-image: url(../assets/img/main/background-main-article.jpg);
+  background-attachment: fixed;
 
   &__ttl {
     color: $article-txt;
@@ -13,6 +14,7 @@
     text-align: center;
     margin: 1rem 0;
     font-size: 2.5rem;
+    background-color: black;
   }
 
   &__txt {
@@ -59,7 +61,7 @@
   }
 
   &__ttl {
-    // color: brown;
+    color: $form-ttl ;
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
@@ -68,6 +70,12 @@
 }
 
 @media (min-width:768px) {
+
+  .article{
+    &__ttl{
+      width: 30%;
+    }
+  }
 
   .card{
     width: 30%;

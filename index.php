@@ -57,7 +57,7 @@ $resultsKami = $query->fetchAll();
 
     <article class="article">
       <h2 class="article__ttl">Kami</h2>
-      <p class="article__txt"> Un kami (神) est une divinité ou un esprit vénéré dans la religion shintoïste. Leur équivalent chinois est shen. Les kamis sont la plupart du temps des éléments de la nature, des animaux ou des forces créatrices de l'univers, mais peuvent aussi être des esprits de personnes décédées1. Beaucoup de kamis sont considérés comme les anciens ancêtres des clans, et il arrivait que certains de leurs membres ayant incarné de leur vivant les valeurs et vertus d'un kami deviennent eux-mêmes des kamis après leur mort. </p>
+      <p class="article__txt"> Un kami (神) est une divinité ou un esprit vénéré dans la religion shintoïste. Leur équivalent chinois est shen. Les kamis sont la plupart du temps des éléments de la nature, des animaux ou des forces créatrices de l'univers, mais peuvent aussi être des esprits de personnes décédées.<br> Beaucoup de kamis sont considérés comme les anciens ancêtres des clans, et il arrivait que certains de leurs membres ayant incarné de leur vivant les valeurs et vertus d'un kami deviennent eux-mêmes des kamis après leur mort. </p>
       <div class="card-container">
 
         <a href="article.php" class="card">
