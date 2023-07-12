@@ -1,6 +1,8 @@
 <?php
 require_once './vendor/autoload.php';
 require './includes/_database.php';
+include 'includes/_head.php';
+include 'includes/_header.php';
 
 session_start();
 
@@ -41,13 +43,4 @@ if (isset($_POST['login'])) {
 }
 ?>
 
-<form action="login.php" method="POST">
-    <label for="">Email:</label>
-    <input type="text" name="someone_email">
-    <br>
-    <label for="">Mot de passe:</label>
-    <input type="password" name="someone_pwd">
-    <br>
-    <input type="submit" name="login" value="Se connecter">
-    <br>
-</form>
+<?php include 'includes/_formLogin.php' ?>

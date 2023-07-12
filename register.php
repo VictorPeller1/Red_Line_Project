@@ -1,6 +1,7 @@
 <?php
 require_once './vendor/autoload.php';
 require 'includes/_database.php';
+include 'includes/_head.php';
 
 session_start();
 
@@ -48,35 +49,9 @@ if (isset($_POST['valider'])) {
 //-----------------------------------------------------------------------------------------------------------------------
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yokami</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <script src="https://kit.fontawesome.com/720cbc824f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="scss/style.css" />
-</head>
 
-<?= include 'includes/_header.php'; ?>
+<?php include 'includes/_header.php' ?>
 
-<form action="register.php" method="post">
-    <label for="">Nom :</label>
-    <input type="text" name="someone_name">
-    <br>
-    <label for="">Email :</label>
-    <input type="text" name="someone_email">
-    <br>
-    <label for="">Password :</label>
-    <input type="password" name="someone_pwd">
-    <br>
-    <input type="submit" name="valider" value="Valider">
-    <br>
-    <a href="login.php">Already an account ?</a>
-</form>
+<?php include 'includes/_formRegister.php' ?>
+
