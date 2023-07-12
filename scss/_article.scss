@@ -1,9 +1,11 @@
+@import './variables';
+
 .article {
   display: flex;
   border-radius: 1rem;
   flex-direction: column;
   margin-top: 3rem;
-  background-image: url(../assets/img/main/background-main-article.jpg);
+  // background-image: url(../assets/img/main/background-main-article.jpg);
 
   &__ttl {
     color: $article-txt;
@@ -57,7 +59,7 @@
   }
 
   &__ttl {
-    color: brown;
+    // color: brown;
     font-weight: bold;
     font-size: 2rem;
     text-align: center;

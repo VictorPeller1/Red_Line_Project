@@ -10,10 +10,6 @@
   margin: 0;
 }
 
-body {
-  background: #550808;
-}
-
 ul, li, a {
   list-style-type: none;
   text-decoration: none;
@@ -127,7 +123,6 @@ ul, li, a {
   border-radius: 1rem;
   flex-direction: column;
   margin-top: 3rem;
-  background-image: url(../assets/img/main/background-main-article.jpg);
 }
 .article__ttl {
   color: #fff;
@@ -175,7 +170,6 @@ ul, li, a {
   border-radius: 1rem 1rem 0 0;
 }
 .card__ttl {
-  color: brown;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;

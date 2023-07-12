@@ -29,16 +29,4 @@ if (isset($_POST['valider'])) {
 }
 ?>
 
-<form action="contribute.php" method="POST">
-    <label for="">Titre:</label>
-    <input type="text" name="article_title">
-    <br>
-    <label for="">Description :</label>
-    <textarea type="text" name="article_content"></textarea>
-    <br>
-    <label for="">Url de l'image :</label>
-    <input type="text" name="article_img">
-    <br>
-    <input type="submit" name="valider" value="Valider">
-    <br>
-</form>
+<?php include 'includes/_formArticle.php'?>
