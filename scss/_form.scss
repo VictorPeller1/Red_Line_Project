@@ -6,11 +6,18 @@
     margin-left: auto;
     margin-right: auto;
 
+    &__container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem  0 5rem ;
+    }
+
     &__logo{
         height: 30rem;
         width: 20rem;
         margin-right: auto;
         margin-left: auto;
+        object-fit: contain;
       }
     
     &__label{
@@ -40,5 +47,11 @@
     }
 
 
+    }
+
+    @media (max-width:768px) {
+        .form{
+            width: auto;
+        }
     }
 

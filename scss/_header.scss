@@ -5,6 +5,7 @@
     position: sticky;
     top: 0;
     opacity: 0.9;
+    
 
     &__ico {
         color: $logo2;
@@ -27,6 +28,15 @@
 
         &--clr2 {
             color: $logo2;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .header{
+        padding: 2rem 0 2rem 0;
+        &__ico{
+            margin-right: 1rem;
         }
     }
 }
