@@ -100,6 +100,20 @@ cards.forEach(card => {
   });
 });
 
+// ------------ HIDDEN HEADER ON SCROLL ----------------
+
+
+const header = document.querySelector('.header');
+console.log(header);
+
+window.addEventListener('scroll', () => {
+
+  if (window.scrollY < 400) {
+    header.style.top = "0";
+  } else {
+    header.style.top = "-100px";
+  }
+})
 
 
 
