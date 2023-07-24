@@ -55,8 +55,22 @@
         margin-left: auto;
     }
 
+    &__social{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-around;
+    }
+
+    &__icon{
+        font-size: 3rem;
+        color: white;
+    }
+
 
     }
+
+// media queries
+
 
     @media (max-width:768px) {
         .form{

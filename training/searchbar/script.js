@@ -1,6 +1,6 @@
 
 // ------------------------------------------- SEARCH BAR ---------------------------------------------------------------
-
+/*
 const characterList = document.getElementById('characterList');
 // console.log(characterList);
 const searchBar = document.getElementById('searchBar');
@@ -46,5 +46,5 @@ const displayCharacters = (characters) => {
 };
 
 loadCharacters();
-
+*/
 // ---------------------------------------------------------------------------------------------------------------------

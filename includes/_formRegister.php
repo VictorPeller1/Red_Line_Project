@@ -14,5 +14,6 @@
         <input class="form__btn" type="submit" name="valider" value="Valider">
         <br>
     </div>
+
     <a class="form__lnk" href="login.php">Already an account ?</a>
 </form>

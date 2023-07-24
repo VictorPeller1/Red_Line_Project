@@ -37,6 +37,8 @@ ul, li, a {
   position: sticky;
   top: 0;
   opacity: 0.9;
+  z-index: 100;
+  width: 100%;
 }
 .header__ico {
   color: white;
@@ -74,8 +76,7 @@ ul, li, a {
 .herobanner__logo {
   width: 100%;
   height: 20rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .herobanner__heading {
   display: flex;
@@ -87,11 +88,11 @@ ul, li, a {
   line-height: 2;
   font-size: 1.4rem;
   color: white;
+  font-weight: bold;
 }
 .herobanner__img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -140,8 +141,9 @@ ul, li, a {
 }
 .article__txt {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin: 2rem;
+  font-weight: bold;
 }
 
 .card-container {
@@ -172,8 +174,7 @@ ul, li, a {
 .card__img {
   height: 100%;
   margin: 0 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
 .card__ttl {
@@ -190,6 +191,7 @@ ul, li, a {
   }
   .card {
     width: 30%;
+    z-index: 1;
   }
 }
 .footer {
@@ -234,8 +236,7 @@ ul, li, a {
   width: 20rem;
   margin-right: auto;
   margin-left: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .form__label {
   font-size: 2rem;
@@ -260,9 +261,20 @@ ul, li, a {
   color: blue;
   margin-left: auto;
 }
+.form__social {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+.form__icon {
+  font-size: 3rem;
+  color: white;
+}
 
 @media (max-width: 768px) {
   .form {
     width: auto;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -7,6 +7,18 @@
         <br>
         <label class="form__label" for="">Mot de passe:</label>
         <input type="password" name="someone_pwd">
+        <div class="form__social">
+            <a href="https://www.facebook.com/">
+                <i class="form__icon fab fa-facebook"></i>
+                <label for="Facebook"></label>
+            </a>
+            <a href="https://www.instagram.com/">
+                <i class="form__icon fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com/">
+                <i class="form__icon fab fa-twitter"></i>
+            </a>
+        </div>
     </div>
     <br>
     <input class="form__btn" type="submit" name="login" value="Se connecter">

@@ -1,4 +1,5 @@
 <?php
+
 require_once './vendor/autoload.php';
 require './includes/_database.php';
 include 'includes/_head.php';
@@ -28,10 +29,6 @@ $resultsKami = $query->fetchAll();
 //}
 ?>
 
-
-
-
-
 <body>
 
   <?php include 'includes/_header.php' ?>
@@ -48,16 +45,16 @@ $resultsKami = $query->fetchAll();
           <img class="card__img" src="<?= $resultsYokai[0]['article_img'] ?>" alt="">
           <li class="card__ttl"><?= $resultsYokai[0]['article_title'] ?></li>
         </a>
-        
+
         <a href="article.php" class="card">
-            <img class="card__img" src=" <?= $resultsYokai[1]['article_img'] ?>" alt="">
-            <p class="card__ttl"><?= $resultsYokai[1]['article_title'] ?></p>
-</a>
+          <img class="card__img" src=" <?= $resultsYokai[1]['article_img'] ?>" alt="">
+          <p class="card__ttl"><?= $resultsYokai[1]['article_title'] ?></p>
+        </a>
     </article>
 
     <article class="article">
       <h2 class="article__ttl">Kami</h2>
-      <p class="article__txt"> Un kami (神) est une divinité ou un esprit vénéré dans la religion shintoïste. Leur équivalent chinois est shen. Les kamis sont la plupart du temps des éléments de la nature, des animaux ou des forces créatrices de l'univers, mais peuvent aussi être des esprits de personnes décédées.<br> Beaucoup de kamis sont considérés comme les anciens ancêtres des clans, et il arrivait que certains de leurs membres ayant incarné de leur vivant les valeurs et vertus d'un kami deviennent eux-mêmes des kamis après leur mort. </p>
+      <p class="article__txt"> Un kami (神) est une divinité ou un esprit vénéré dans la religion shintoïste. <br>Leur équivalent chinois est shen.<br> Les kamis sont la plupart du temps des éléments de la nature, des animaux ou des forces créatrices de l'univers, mais peuvent aussi être des esprits de personnes décédées.<br> </p>
       <div class="card-container">
 
         <a href="article.php" class="card">
@@ -71,13 +68,6 @@ $resultsKami = $query->fetchAll();
     </article>
 
   </section>
-
-
-
-
-
-
-
 
   <?php
   //    $file = 'article.json'; // Chemin vers le fichier JSON
@@ -118,15 +108,7 @@ $resultsKami = $query->fetchAll();
   //    
   ?>
 
-
-
-
-
-
-
-
-
-<?php include 'includes/_footer.php'?>
+  <?php include 'includes/_footer.php' ?>
 
   <script src="script.js"></script>
 </body>
