@@ -3,7 +3,7 @@
         'name' => 'vicool/red_line_project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'a812f48b4a2c763d5cda9f79ac0034de3813dcae',
+        'reference' => '0b292e41cdd9551f84249e31ecf4065064f2a6e5',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -58,7 +58,7 @@
         'vicool/red_line_project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'a812f48b4a2c763d5cda9f79ac0034de3813dcae',
+            'reference' => '0b292e41cdd9551f84249e31ecf4065064f2a6e5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
