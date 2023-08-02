@@ -3,34 +3,34 @@ USE yokami;
 
 CREATE TABLE category (
    Id_category INT AUTO_INCREMENT,
-   category_name VARCHAR(50),
+   category_name VARCHAR(100),
    PRIMARY KEY(Id_category)
 );
 
 CREATE TABLE validation (
    Id_Validation INT AUTO_INCREMENT,
-   validation_state VARCHAR(50),
-   validation_date VARCHAR(50),
-   PRIMARY KEY(Id_Validation)
+   validation_state BOOLEAN DEFAULT false,
+   validation_date  DATETIME DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY(Id_Validation)
 );
 
 CREATE TABLE someone (
    Id_someone INT AUTO_INCREMENT,
-   someone_name VARCHAR(50),
-   someone_email VARCHAR(50),
-   someone_pwd VARCHAR(50),
+   someone_name VARCHAR(100),
+   someone_email VARCHAR(100),
+   someone_pwd VARCHAR(100),
    someone_date_creation_account DATETIME DEFAULT CURRENT_TIMESTAMP,
-   someone_role VARCHAR(50),
+   someone_role VARCHAR(100),
    PRIMARY KEY(Id_someone)
 );
 
 CREATE TABLE article (
    Id_article INT AUTO_INCREMENT,
-   article_title VARCHAR(50),
+   article_title VARCHAR(100),
    article_content VARCHAR(500),
    article_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-   article_img VARCHAR(200),
-   Id_Validation INT NOT NULL,
+   article_img VARCHAR(500),
+   Id_Validation BOOLEAN NOT NULL,
    Id_category INT NOT NULL,
    Id_someone INT NOT NULL,
    PRIMARY KEY(Id_article),

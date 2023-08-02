@@ -89,7 +89,7 @@ const cards = document.querySelectorAll(".card");
 console.log(cards);
 
 cards.forEach(card => {
-    card.addEventListener('mouseover', () => {
+    card.addEventListener('mouseover', () => { 
         card.style.transform = "scale(1.4)";
         card.style.position = "relative";
         //card.style.z-index="1";
@@ -113,4 +113,8 @@ window.addEventListener('scroll', () => {
     } else {
         header.style.top = "-100px";
     }
-})
+});
+
+
+
+

@@ -29,4 +29,4 @@ if (isset($_POST['valider'])) {
 }
 ?>
 
-<?php include 'includes/_formArticle.php'?>
+<?php include 'includes/_formContribute.php'?>

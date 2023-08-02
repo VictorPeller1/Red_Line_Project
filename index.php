@@ -19,14 +19,6 @@ $query = $dbCo->prepare("SELECT article_title, article_img FROM article WHERE id
 $query->execute();
 $resultsKami = $query->fetchAll();
 
-// var_dump($results);
-
-// foreach ($resultsKami as $result) {
-// echo '<li>
-//  <span data-name-id="' . $result['article_title'] . '"></span>
-//  <img src="' . $result['article_img'] . '"></img>
-//  </li>';
-//}
 ?>
 
 <body>
@@ -39,15 +31,15 @@ $resultsKami = $query->fetchAll();
 
     <article class="article">
       <h2 class="article__ttl">Yōkais</h2>
-      <p class="article__txt"> Les yōkai (妖怪, « esprit », « fantôme », « démon », « apparition étrange ») sont un type de créatures surnaturelles dans le folklore japonais. Ils sont souvent représentés comme des esprits malfaisants ou simplement malicieux démontrant les tracas quotidiens ou inhabituels. </p>
+      <p class="article__txt"> Les yōkai (妖怪, « esprit », « fantôme », « démon », « apparition étr ange ») sont un type de créatures surnaturelles dans le folklore japonais. Ils sont souvent représentés comme des esprits malfaisants ou simplement malicieux démontrant les tracas quotidiens ou inhabituels. </p>
       <div class="card-container">
 
-        <?php foreach ($resultsYokai as $result): ?>
+        <?php foreach ($resultsYokai as $result) : ?>
           <a href="article.php" class="card">
-          <img class="card__img" src="<?= $result['article_img'] ?>" alt="">
-          <li class="card__ttl"><?= $result['article_title'] ?></li>
+            <img class="card__img" src="<?= $result['article_img'] ?>" alt="">
+            <li class="card__ttl"><?= $result['article_title'] ?></li>
           </a>
-          <?php endforeach; ?>
+        <?php endforeach; ?>
       </div>
     </article>
 
@@ -56,54 +48,54 @@ $resultsKami = $query->fetchAll();
       <p class="article__txt"> Un kami (神) est une divinité ou un esprit vénéré dans la religion shintoïste. <br>Leur équivalent chinois est shen.<br> Les kamis sont la plupart du temps des éléments de la nature, des animaux ou des forces créatrices de l'univers, mais peuvent aussi être des esprits de personnes décédées.<br> </p>
       <div class="card-container">
 
-<?php foreach ($resultsKami as $result): ?>
-  <a href="article.php" class="card">
-    <img class="card__img" src="<?= $result['article_img'] ?>" alt="">
-    <p class="card__ttl"><?= $result['article_title'] ?></p>
-  </a>
-<?php endforeach; ?>
+        <?php foreach ($resultsKami as $result) : ?>
+          <a href="article.php" class="card">
+            <img class="card__img" src="<?= $result['article_img'] ?>" alt="">
+            <p class="card__ttl"><?= $result['article_title'] ?></p>
+          </a>
+        <?php endforeach; ?>
       </div>
     </article>
 
   </section>
 
-<?php
-//    $file = 'article.json'; // Chemin vers le fichier JSON
-//
-//    // Lecture du contenu du fichier JSON
-//    $jsonData = file_get_contents($file);
-//
-//    // Vérification de la validité du JSON
-//    if ($jsonData === false) {
-//      echo "Erreur lors de la lecture du fichier JSON.";
-//      exit;
-//    }
-//
-//    // Conversion du JSON en tableau associatif
-//    $data = json_decode($jsonData, true);
-//
-//    if ($data !== null) {
-//      if (isset($data['article'])) {
-//        $articles = $data['article'];
-//
-//        foreach ($articles as $article) {
-//          echo $article['Id_article'] . "<br>";
-//          echo $article['article_title'] . "<br>";
-//          echo $article['article_content'] . "<br>";
-//          echo $article['article_date'] . "<br>";
-//          echo $article['Id_Validation'] . "<br>";
-//          echo $article['Id_category'] . "<br>";
-//          echo $article['Id_someone'] . "<br>";
-//          echo "<br>";
-//        }
-//      } else {
-//        echo "Aucun article trouvé.";
-//      }
-//    } else {
-//      echo "JSON invalide.";
-//    }
-//
-?>
+  <?php
+  //    $file = 'article.json'; // Chemin vers le fichier JSON
+  //
+  //    // Lecture du contenu du fichier JSON
+  //    $jsonData = file_get_contents($file);
+  //
+  //    // Vérification de la validité du JSON
+  //    if ($jsonData === false) {
+  //      echo "Erreur lors de la lecture du fichier JSON.";
+  //      exit;
+  //    }
+  //
+  //    // Conversion du JSON en tableau associatif
+  //    $data = json_decode($jsonData, true);
+  //
+  //    if ($data !== null) {
+  //      if (isset($data['article'])) {
+  //        $articles = $data['article'];
+  //
+  //        foreach ($articles as $article) {
+  //          echo $article['Id_article'] . "<br>";
+  //          echo $article['article_title'] . "<br>";
+  //          echo $article['article_content'] . "<br>";
+  //          echo $article['article_date'] . "<br>";
+  //          echo $article['Id_Validation'] . "<br>";
+  //          echo $article['Id_category'] . "<br>";
+  //          echo $article['Id_someone'] . "<br>";
+  //          echo "<br>";
+  //        }
+  //      } else {
+  //        echo "Aucun article trouvé.";
+  //      }
+  //    } else {
+  //      echo "JSON invalide.";
+  //    }
+  //
+  ?>
 
   <?php include 'includes/_footer.php' ?>
 
