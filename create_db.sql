@@ -11,7 +11,7 @@ CREATE TABLE validation (
    Id_Validation INT AUTO_INCREMENT,
    validation_state BOOLEAN DEFAULT false,
    validation_date  DATETIME DEFAULT CURRENT_TIMESTAMP,
-PRIMARY KEY(Id_Validation)
+   PRIMARY KEY(Id_Validation)
 );
 
 CREATE TABLE someone (
@@ -30,11 +30,11 @@ CREATE TABLE article (
    article_content VARCHAR(500),
    article_date DATETIME DEFAULT CURRENT_TIMESTAMP,
    article_img VARCHAR(500),
-   Id_Validation BOOLEAN NOT NULL,
+   Id_Validation INT NOT NULL,
    Id_category INT NOT NULL,
    Id_someone INT NOT NULL,
    PRIMARY KEY(Id_article),
-   FOREIGN KEY(Id_Validation) REFERENCES Validation(Id_Validation),
+   FOREIGN KEY(Id_Validation) REFERENCES validation(Id_Validation),
    FOREIGN KEY(Id_category) REFERENCES category(Id_category),
    FOREIGN KEY(Id_someone) REFERENCES someone(Id_someone)
 );
@@ -59,3 +59,4 @@ CREATE TABLE feedback (
    FOREIGN KEY(Id_someone) REFERENCES someone(Id_someone),
    FOREIGN KEY(Id_article) REFERENCES article(Id_article)
 );
+

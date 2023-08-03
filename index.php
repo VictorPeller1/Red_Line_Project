@@ -8,14 +8,14 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 ?>
 
 <?php
-$query = $dbCo->prepare("SELECT article_title, article_img FROM article WHERE id_category=0 LIMIT 2");
+$query = $dbCo->prepare("SELECT article_title, article_img FROM article WHERE id_category=0 LIMIT 6");
 $query->execute();
 $resultsYokai = $query->fetchAll();
 // var_dump($resultsYokai)
 ?>
 
 <?php
-$query = $dbCo->prepare("SELECT article_title, article_img FROM article WHERE id_category=1 LIMIT 2");
+$query = $dbCo->prepare("SELECT article_title, article_img FROM article WHERE id_category=1 LIMIT 6");
 $query->execute();
 $resultsKami = $query->fetchAll();
 

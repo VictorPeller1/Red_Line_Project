@@ -1,5 +1,8 @@
 <form method="post" action="contribute.php">
 
+    <label for="someone_email">Nom :</label>
+    <input type="name" id="someone_name" name="someone_name" required>
+
     <label for="someone_email">Adresse email :</label>
     <input type="email" id="someone_email" name="someone_email" required>
 

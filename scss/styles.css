@@ -149,6 +149,7 @@ ul, li, a {
 .card-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {

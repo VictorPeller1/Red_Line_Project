@@ -1,7 +1,22 @@
+INSERT INTO article (article_title, article_content, article_date, article_img, Id_category)
+VALUES ('Kappa', 'Description du Kappa', '', 'https://contactjeunespageslaw.files.wordpress.com/2020/11/kappa.png', 0),
+       ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
+       ('Amaterasu', 'Description d Amaterasu', '', 'https://www.lejapondemax.com/uploads/1/0/3/7/103751148/amaterasu_1_orig.jpg', 1),
+       ('Hachiman', 'Description d Hachiman', '', 'https://upload.wikimedia.org/wikipedia/commons/2/22/S%C5%8Dgy%C5%8D_Hachiman.jpg', 1),
+       ('Susano', 'Description de Susano', '','https://upload.wikimedia.org/wikipedia/commons/4/4b/11.36845-Utagawa_Kuniteru_I-Museum_of_Fine_Art_Boston.jpg', 1),
+       ('Tsukuyomi', 'Description de Tsukoyomi', '', 'https://upload.wikimedia.org/wikipedia/commons/8/88/Shinto-Tsukuyomi-no-Mikoto-Old-Artwork.png', 1),
+       ('Izanagi', 'Description d Izanagi', '', 'https://upload.wikimedia.org/wikipedia/commons/8/84/Kobayashi_Izanami_and_Izanagi.jpg', 1),
+       ('Izanami', 'Description d Izanami', '', 'https://i.servimg.com/u/f44/12/54/80/72/izana10.jpg', 1),
+       ('Hachiman', 'Description d Hachiman', '', 'https://upload.wikimedia.org/wikipedia/commons/2/22/S%C5%8Dgy%C5%8D_Hachiman.jpg', 1),
+       ('Hachiman', 'Description d Hachiman', '', 'https://upload.wikimedia.org/wikipedia/commons/2/22/S%C5%8Dgy%C5%8D_Hachiman.jpg', 1),
+       ('Hachiman', 'Description d Hachiman', '', 'https://upload.wikimedia.org/wikipedia/commons/2/22/S%C5%8Dgy%C5%8D_Hachiman.jpg', 1),
+       ('Hachiman', 'Description d Hachiman', '', 'https://upload.wikimedia.org/wikipedia/commons/2/22/S%C5%8Dgy%C5%8D_Hachiman.jpg', 1);
 
-INSERT INTO article (id_article, article_title, article_content, article_date, article_img, Id_category)
-VALUES (1, 'Kappa', 'Description du Kappa', '', 'https://contactjeunespageslaw.files.wordpress.com/2020/11/kappa.png', 0),
-       (2, 'Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
-       (3, 'Amaterasu', 'Description d Amaterasu', '', 'https://www.lejapondemax.com/uploads/1/0/3/7/103751148/amaterasu_1_orig.jpg', 1),
-       (4, 'Hachiman', 'Description d Hachiman', '', 'https://upload.wikimedia.org/wikipedia/commons/2/22/S%C5%8Dgy%C5%8D_Hachiman.jpg', 1)
-    
