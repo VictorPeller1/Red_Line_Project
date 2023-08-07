@@ -1,4 +1,3 @@
-
 <?php
 require_once './vendor/autoload.php';
 require './includes/_database.php';
@@ -11,7 +10,6 @@ session_start();
 $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 ?>
 
-
 <?php
 $query = $dbCo->prepare("SELECT id_article, article_title, article_img FROM article WHERE id_category=0");
 $query->execute();
@@ -20,7 +18,6 @@ $resultsYokai = $query->fetchAll();
 ?>
 
 <body>
-
 
     <article class="article">
       <h2 class="article__ttl">Yōkais</h2>
