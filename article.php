@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
 
   // Si aucun article n'est trouvé avec l'ID fourni, redirige vers la page d'accueil ou afficher un message d'erreur
   if (!$selectedArticle) {
-    header("Location: index.php"); // Remplace index.php par le nom de la page d'accueil
+    header("Location: index.php"); 
     exit;
   }
 } else {

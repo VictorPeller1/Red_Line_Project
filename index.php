@@ -43,8 +43,6 @@ $resultsKami = $query->fetchAll();
 
       </div>
     </article>
-    </div>
-    </article>
 
     <article class="article">
       <h2 class="article__ttl">Kami</h2>
