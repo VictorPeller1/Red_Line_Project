@@ -9,7 +9,6 @@ cards.forEach(card => {
     card.style.transform = "scale(1.2)";
     card.style.position = "relative";
     card.style.transition = "250ms";
-    //card.style.z-index="1";
   });
 
   card.addEventListener('mouseout', () => {

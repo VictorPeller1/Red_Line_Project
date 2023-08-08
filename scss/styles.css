@@ -165,7 +165,7 @@ ul, li, a {
   display: flex;
   flex-direction: column;
   width: 70%;
-  height: 22rem;
+  height: 30rem;
   padding-top: 1rem;
   border-radius: 1rem 1rem 0 0;
   margin-bottom: 3rem;
@@ -192,6 +192,7 @@ ul, li, a {
   }
   .card {
     width: 30%;
+    height: 30rem;
     z-index: 1;
   }
 }

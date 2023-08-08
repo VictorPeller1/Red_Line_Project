@@ -2,61 +2,61 @@ CREATE DATABASE yokami;
 USE yokami;
 
 CREATE TABLE category (
-   Id_category INT AUTO_INCREMENT,
+   id_category INT AUTO_INCREMENT,
    category_name VARCHAR(100),
-   PRIMARY KEY(Id_category)
+   PRIMARY KEY(id_category)
 );
 
 CREATE TABLE validation (
-   Id_Validation INT AUTO_INCREMENT,
+   id_validation INT AUTO_INCREMENT,
    validation_state BOOLEAN DEFAULT false,
    validation_date  DATETIME DEFAULT CURRENT_TIMESTAMP,
-   PRIMARY KEY(Id_Validation)
+   PRIMARY KEY(id_validation)
 );
 
 CREATE TABLE someone (
-   Id_someone INT AUTO_INCREMENT,
+   id_someone INT AUTO_INCREMENT,
    someone_name VARCHAR(100),
    someone_email VARCHAR(100),
    someone_pwd VARCHAR(100),
    someone_date_creation_account DATETIME DEFAULT CURRENT_TIMESTAMP,
    someone_role VARCHAR(100),
-   PRIMARY KEY(Id_someone)
+   PRIMARY KEY(id_someone)
 );
 
 CREATE TABLE article (
-   Id_article INT AUTO_INCREMENT,
+   id_article INT AUTO_INCREMENT,
    article_title VARCHAR(100),
    article_content VARCHAR(500),
    article_date DATETIME DEFAULT CURRENT_TIMESTAMP,
    article_img VARCHAR(500),
-   Id_Validation INT NOT NULL,
-   Id_category INT NOT NULL,
-   Id_someone INT NOT NULL,
-   PRIMARY KEY(Id_article),
-   FOREIGN KEY(Id_Validation) REFERENCES validation(Id_Validation),
-   FOREIGN KEY(Id_category) REFERENCES category(Id_category),
-   FOREIGN KEY(Id_someone) REFERENCES someone(Id_someone)
+   id_validation INT,
+   id_category INT, 
+   id_someone INT, 
+   PRIMARY KEY(id_article),
+   FOREIGN KEY(id_validation) REFERENCES validation(id_validation),
+   FOREIGN KEY(id_category) REFERENCES category(id_category),
+   FOREIGN KEY(id_someone) REFERENCES someone(id_someone)
 );
 
 CREATE TABLE link (
-   Id_link INT AUTO_INCREMENT,
+   id_link INT AUTO_INCREMENT,
    article_source VARCHAR(50),
    article_target VARCHAR(50),
-   Id_article INT NOT NULL,
-   PRIMARY KEY(Id_link),
-   FOREIGN KEY(Id_article) REFERENCES article(Id_article)
+   id_article INT NOT NULL,
+   PRIMARY KEY(id_link),
+   FOREIGN KEY(id_article) REFERENCES article(id_article)
 );
 
 CREATE TABLE feedback (
-   Id_feedback INT AUTO_INCREMENT,
+   id_feedback INT AUTO_INCREMENT,
    feedback_content VARCHAR(50),
    feedback_date_written DATETIME,
    feedback_name VARCHAR(50),
-   Id_someone INT NOT NULL,
-   Id_article INT NOT NULL,
-   PRIMARY KEY(Id_feedback),
-   FOREIGN KEY(Id_someone) REFERENCES someone(Id_someone),
-   FOREIGN KEY(Id_article) REFERENCES article(Id_article)
+   id_someone INT NOT NULL,
+   id_article INT NOT NULL,
+   PRIMARY KEY(id_feedback),
+   FOREIGN KEY(id_someone) REFERENCES someone(id_someone),
+   FOREIGN KEY(id_article) REFERENCES article(id_article)
 );
 

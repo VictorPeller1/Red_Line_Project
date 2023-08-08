@@ -1,4 +1,3 @@
-
 <?php
 require_once './vendor/autoload.php';
 require './includes/_database.php';
@@ -33,7 +32,7 @@ if (isset($_GET['id'])) {
 
   <section class="article-container">
     <h2 class="article__ttl"><?= $selectedArticle['article_title'] ?></h2>
-    <img class="selected-article__img" src="<?= $selectedArticle['article_img'] ?>" alt="">
+<img class="selected-article__img" src="<?= $selectedArticle['article_img'] ?>" alt="">
   </section>
 
   <?php include 'includes/_footer.php' ?>

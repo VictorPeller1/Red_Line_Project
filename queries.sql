@@ -1,4 +1,4 @@
-INSERT INTO article (article_title, article_content, article_date, article_img, Id_category)
+INSERT INTO article (article_title, article_content, article_date, article_img, id_category)
 VALUES ('Kappa', 'Description du Kappa', '', 'https://contactjeunespageslaw.files.wordpress.com/2020/11/kappa.png', 0),
        ('Tengu', 'Description d un Tengu', '', 'https://www.pathfinder-fr.org/Wiki/GetFile.aspx?Page=Parties.P104%20Tengu&File=tengu.jpg', 0),
        ('Nekomata', 'Description d un Nekomata', '', 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Suuhi_Nekomata.jpg', 0),

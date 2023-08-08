@@ -27,26 +27,6 @@ if (isset($_POST['valider'])) {
     }
 };
 
-//---------------------------------------------- OR -------------------------------------------------------------------------
-
-//if (!empty($POST_['someone_name']) && !empty($POST_['someone_email'])  && !empty($POST_['someone_pwd'])) {
-//    $email = $_POST['someone_email'];
-//    $password = password_hash($_POST['someone_pwd'], PASSWORD_DEFAULT);
-//    $query = $dbCo->prepare('INSERT INTO someone (someone_name, someone_email, someone_pwd) 
-//                                        VALUES (:someone_name, :someone_email, :omeone_pwd)');
-//    $query->bindValue('someone_name', $someone_name);
-//    $query->bindValue('someone_email', $someone_email);
-//    $query->bindValue('someone_pwd', $someone_pwd);
-//    $result = $query->execute();
-//
-//    if ($result) {
-//        echo "L'inscription s'est déroulée avec succès";
-//    } else {
-//        echo "Erreur lors de votre inscription";
-//    };
-//};
-
-//-----------------------------------------------------------------------------------------------------------------------
 ?>
 
 
