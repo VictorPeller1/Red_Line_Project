@@ -1,47 +1,73 @@
-@import './variables';
+// variables import 
 
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  font-size: calc(0.5rem + 1.5vw);
 
-.header {
-    border-bottom: 1px solid $article-txt;
-    padding: 1.5rem;
-    background-color: $header-bkg;
-    position: sticky;
-    top: 0;
-    opacity: 0.9;
-    z-index:100;
-  width: 100%;
+  &__lst {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  &__ico {
+    cursor: pointer;
+    display: none;
+
+    &::before {
+      content: "\2630";
+      color: white;
+    }
+  }
+
+  &__lnk {
+    padding: 1rem;
+
+    &:hover {
+      background: rgb(157, 217, 240);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    &__lst {
+      position: fixed;
+      left: -100%;
+      top: 22%;
+      flex-direction: column;
+      background: skyblue;
+      width: 100%;
+      text-align: center;
+      transition: 0.25s;
+    }
+
+    &.active &__lst {
+      left: 0;
+    }
 
     &__ico {
-        color: $logo2;
-        font-size: 2rem;
-        margin-right: 1.5rem;
+      display: block;
+
+      &::before {
+        content: "\2630";
+        color: white;
+      }
+
+      &.active::before {
+        content: "\2715";
+        color: white;
+      }
     }
 
-    &__nav {
-        display: flex;
+    &.active &__lnk {
+      left: 0;
     }
-
-    &__ttl {
-        font-size: 2rem;
-        margin-right: auto;
-        text-decoration: none;
-
-        &--clr1 {
-            color: $logo1;
-        }
-
-        &--clr2 {
-            color: $logo2;
-        }
-    }
+  }
 }
 
-@media (max-width:768px) {
-    .header{
-        padding: 2rem 0 2rem 0;
-        &__ico{
-            margin-right: 1rem;
-        }
-    }
-}
+

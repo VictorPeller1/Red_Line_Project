@@ -35,7 +35,7 @@ $resultsKami = $query->fetchAll();
 
     </div>
   </article>
-
+<?php  include 'includes/_footer.php' ?>
 
   <script src="script.js"></script>
 </body>

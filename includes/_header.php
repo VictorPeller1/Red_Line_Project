@@ -1,13 +1,15 @@
-<header class="header">
-    <nav class="header__nav">
-        <a href="/Red_Line_Project/index.php" class="header__ttl">
-            <span class="header__ttl--clr2">Yo</span>
-            <span class="header__ttl--clr1">ka</span>
-            <span class="header__ttl--clr2">mi</span>
-</a>
-  <form>
-    <input type="text" id="searchInput" placeholder="Entrez votre recherche...">
-  </form>
-        <a href="/Red_Line_Project/register.php"><i href class="header__ico fa-solid fa-user-ninja"></i></a>
-    </nav>
-</header>
+<nav class="nav" id="nav">
+  <a href="index.php">Yokami &#9752;</a>
+  <ul class="nav__lst">
+    <li class="nav__lnk">
+      <a href="register.php">Inscription</a>
+    </li>
+    <li class="nav__lnk">
+      <a href="login.php">Connexion</a>
+    </li>
+    <li class="nav__lnk">
+      <a href="#">Paramètres</a>
+    </li>
+  </ul>
+  <div class="nav__ico" id="icons"></div>
+</nav>

@@ -25,7 +25,14 @@ $resultsKami = $query->fetchAll();
 
 
 
-  <?php include 'includes/_header.php' ?>
+  <?php include './includes/_header.php' ?>
+
+    <form>
+      <input type="text" id="searchInput" placeholder="Entrez votre recherche...">
+</form>
+
+
+
 
   <section class="body-container">
 

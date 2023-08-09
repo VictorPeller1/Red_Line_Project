@@ -18,19 +18,6 @@ cards.forEach(card => {
 
 // ------------ HIDDEN HEADER ON SCROLL ----------------
 
-
-const header = document.querySelector('.header');
-console.log(header);
-
-window.addEventListener('scroll', () => {
-
-  if (window.scrollY < 400) {
-    header.style.top = "0";
-  } else {
-    header.style.top = "-100px";
-  }
-});
-
 // -------- SEARCH SECTION -------------------------
 
 
@@ -55,3 +42,17 @@ window.addEventListener('scroll', () => {
     searchInput.addEventListener('input', filtrerCards);
 
     filtrerCards();
+
+// -------------- BURGER MENU -------------------
+
+
+
+const nav = document.querySelector(".nav");
+const icons = document.querySelector(".nav__ico");
+
+icons.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+
+
