@@ -14,7 +14,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 $query = $dbCo->prepare("SELECT id_article, article_title, article_img FROM article WHERE id_category=1");
 $query->execute();
 $resultsKami = $query->fetchAll();
-// var_dump($resultsYokai)
+// var_dump($resultsKami)
 ?>
 
 <body>
@@ -27,9 +27,9 @@ $resultsKami = $query->fetchAll();
     <div class="card-container">
 
       <?php foreach ($resultsKami as $result) : ?>
-        <a href="article.php?id=<?= $result['id_article'] ?>" class="card"> <!-- Ajout du lien avec l'ID de l'article -->
+        <a href="article.php?id=<?= $result['id_article'] ?>" class="card">
           <img class="card__img" src="<?= $result['article_img'] ?>" alt="">
-          <li class="card__ttl"><?= $result['article_title'] ?></li>
+<li class="card__ttl"><?= $result['article_title'] ?></li>
         </a>
       <?php endforeach; ?>
 

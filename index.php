@@ -40,7 +40,7 @@ $resultsKami = $query->fetchAll();
 
     <article class="article">
       <a href="yokai.php" class="article__ttl">Yōkais</a>
-      <p class="article__txt"> Les yōkai (妖怪, « esprit », « fantôme », « démon », « apparition étr ange ») sont un type de créatures surnaturelles dans le folklore japonais. Ils sont souvent représentés comme des esprits malfaisants ou simplement malicieux démontrant les tracas quotidiens ou inhabituels. </p>
+      <p class="article__txt"> Les yōkai (妖怪, « esprit », « fantôme », « démon », « apparition étrange ») sont un type de créatures surnaturelles dans le folklore japonais. Ils sont souvent représentés comme des esprits malfaisants ou simplement malicieux démontrant les tracas quotidiens ou inhabituels. </p>
       <div class="card-container">
 
         <?php foreach ($resultsYokai as $result) : ?>
