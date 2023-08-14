@@ -21,14 +21,22 @@ if (isset($_POST['connexion'])) {
     $user = $query->fetch(PDO::FETCH_ASSOC);
 
     if ($user && password_verify($someone_pwd, $user['someone_pwd'])) {
-        $_SESSION['user_id'] = $user['id']; // You may want to store more user information in the session if needed
+        $_SESSION['user_id'] = $user['id_someone'];
+        $_SESSION['user_role'] = $user['someone_role']; // Store user role in session
         echo "Connexion réussie";
-        header("Location:./contribute.php"); // Redirect to the dashboard or any other authenticated page
+
+        if ($user['someone_role'] == 'contributor') {
+            header("Location: ./contribute.php"); // Redirect to the contributor dashboard
+        } elseif ($user['someone_role'] == 'admin') {
+            header("Location: ./admin.php"); // Redirect to the admin dashboard
+        } else {
+            // Handle other roles or scenarios
+            // Redirect to appropriate pages or show appropriate messages
+        }
+
         exit();
     } else {
         echo "Adresse email ou mot de passe incorrect";
     }
 }
 ?>
-
-
