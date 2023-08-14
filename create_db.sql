@@ -2,13 +2,13 @@ CREATE DATABASE yokami;
 USE yokami;
 
 CREATE TABLE category (
-   id_category INT AUTO_INCREMENT,
+   id_category INT,
    category_name VARCHAR(100),
    PRIMARY KEY(id_category)
 );
 
 CREATE TABLE validation (
-   id_validation INT AUTO_INCREMENT,
+   id_validation INT,
    validation_state BOOLEAN DEFAULT false,
    validation_date  DATETIME DEFAULT CURRENT_TIMESTAMP,
    PRIMARY KEY(id_validation)
@@ -30,7 +30,7 @@ CREATE TABLE article (
    article_content VARCHAR(500),
    article_date DATETIME DEFAULT CURRENT_TIMESTAMP,
    article_img VARCHAR(500),
-   id_validation INT,
+   id_validation INT DEFAULT 1,
    id_category INT, 
    id_someone INT, 
    PRIMARY KEY(id_article),

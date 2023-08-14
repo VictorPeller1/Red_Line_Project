@@ -11,7 +11,7 @@ if (isset($_POST['valider'])) {
     $someone_email = $_POST['someone_email'];
     $someone_pwd = $_POST['someone_pwd'];
 
-    // Hasher le mot de passe
+    // Hasher le mot de passehttps://moodle.com/fr/connexion/
     $hashed_password = password_hash($someone_pwd, PASSWORD_DEFAULT);
 
     $mySQL = "INSERT INTO `someone` (`someone_name`, `someone_email`, `someone_pwd`)
