@@ -12,19 +12,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $article_content = $_POST['article_content'];
         $article_img = $_POST['article_img'];
         $id_category = $_POST['id_category'];
-
+        
+        
+        $user_id = $_SESSION['user_id'];
+        var_dump($_SESSION['user_id']);
         // ID Validation par défaut à 1 (validation_state = false)
         $id_validation = 1;
 
         // Insertion dans la table article en spécifiant id_validation
-        $articleSQL = "INSERT INTO `article` (`article_title`, `article_content`, `article_img`, `id_category`, `id_validation`)
-                  VALUES (:article_title, :article_content, :article_img, :id_category, :id_validation)";
-        $query = $dbCo->prepare($articleSQL);
-        $query->bindParam(':article_title', $article_title);
-        $query->bindParam(':article_content', $article_content);
-        $query->bindParam(':article_img', $article_img);
-        $query->bindParam(':id_category', $id_category);
-        $query->bindParam(':id_validation', $id_validation); // Ajout de ce paramètre
+        $articleSQL = "INSERT INTO `article` (`article_title`, `article_content`, `article_img`, `id_category`, `id_validation`, `id_someone`)
+              VALUES (:article_title, :article_content, :article_img, :id_category, :id_validation, :id_someone)";
+$query = $dbCo->prepare($articleSQL);
+$query->bindParam(':article_title', $article_title);
+$query->bindParam(':article_content', $article_content);
+$query->bindParam(':article_img', $article_img);
+$query->bindParam(':id_category', $id_category);
+$query->bindParam(':id_validation', $id_validation);
+$query->bindParam(':id_someone', $user_id); // Ajoutez cette ligne pour lier l'article à l'utilisateur
+
 
         $response = $query->execute();
 

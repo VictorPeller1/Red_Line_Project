@@ -4,7 +4,6 @@ require './includes/_database.php';
 include 'includes/_head.php';
 
 session_start();
-$_SESSION['token'] = md5(uniqid(mt_rand(), true));
 ?>
 
 <?php
