@@ -22,6 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_article'])) {
     }
 }
 
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['edit_article'])) {
+    $article_id = $_POST['article_id'];
+
+    // Rediriger l'utilisateur vers une page de modification spécifique pour l'article
+    header("Location: edit_article.php?article_id=" . $article_id);
+    exit();
+}
+
+
 $query = $dbCo->prepare('SELECT id_article, article_title, article_content, article_img, id_validation
                          FROM article
                          WHERE id_someone = :contributor_id AND (id_validation IS NULL OR id_validation = 1)');
@@ -31,7 +40,6 @@ $submitted_articles = $query->fetchAll();
 ?>
 
 <h1>Dashboard</h1>
-
 <div class="article-list">
     <?php foreach ($submitted_articles as $article) : ?>
         <div class="card article-card">
@@ -39,9 +47,14 @@ $submitted_articles = $query->fetchAll();
             <p class="card__content"><?= $article['article_content'] ?></p>
             <img class="card__img" src="<?= $article['article_img'] ?>" alt="Article Image">
             
-            <form action="" method="POST">
+            <form class="delete-form" method="POST">
                 <input type="hidden" name="article_id" value="<?= $article['id_article'] ?>">
                 <button type="submit" name="delete_article">Supprimer</button>
+            </form>
+            
+            <form class="edit-form" method="POST">
+                <input type="hidden" name="article_id" value="<?= $article['id_article'] ?>">
+                <button type="submit" name="edit_article">Modifier</button>
             </form>
         </div>
     <?php endforeach; ?>
