@@ -2,6 +2,7 @@
 require_once './vendor/autoload.php';
 require './includes/_database.php';
 include 'includes/_head.php';
+include 'includes/_header.php';
 
 session_start();
 

@@ -11,7 +11,7 @@ $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 ?>
 
 <?php
-$query = $dbCo->prepare("SELECT id_article, article_title, article_img FROM article WHERE id_category=1");
+$query = $dbCo->prepare("SELECT id_article, article_title, article_img FROM article WHERE id_category=2 AND id_validation=2");
 $query->execute();
 $resultsKami = $query->fetchAll();
 // var_dump($resultsKami)

@@ -51,6 +51,11 @@ $query->bindParam(':id_someone', $user_id); // Ajoutez cette ligne pour lier l'a
 
 <h1>Formulaire de Contribute</h1>
 
+<br><br>
+<a href="dashboard.php">Accéder à mes articles rédigés</a>
+
+<br><br>
+
 <form action="contribute.php" method="POST">
     <label for="article_title">Titre :</label><br>
     <input type="text" id="article_title" name="article_title" required><br>
@@ -68,6 +73,7 @@ $query->bindParam(':id_someone', $user_id); // Ajoutez cette ligne pour lier l'a
         <option value="1">yokai</option>
         <option value="2">kami</option>
     </select><br>
+
 
     <input type="submit" name="valider" value="Insérer l'Article">
 </form>
