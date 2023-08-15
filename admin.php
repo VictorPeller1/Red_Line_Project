@@ -19,7 +19,19 @@ if (isset($_POST['validate_article'])) {
     exit();
 }
 
-// ... (autres parties du code) ...
+// Traitement de la suppression de l'article
+if (isset($_POST['delete_article'])) {
+    $article_id = $_POST['article_id'];
+    
+    // Supprime l'article de la base de données
+    $deleteQuery = $dbCo->prepare("DELETE FROM article WHERE id_article = :article_id");
+    $deleteQuery->bindParam(':article_id', $article_id);
+    $deleteQuery->execute();
+    
+    // Redirige vers la page admin.php après la suppression
+    header("Location: admin.php");
+    exit();
+}
 
 $query = $dbCo->prepare('SELECT article.id_article, article.article_title, article.article_img, article.article_content, someone.someone_name
 FROM article
