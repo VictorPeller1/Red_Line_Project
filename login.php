@@ -1,4 +1,5 @@
 <?php
+//just a test
 require_once './vendor/autoload.php';
 require './includes/_database.php';
 include 'includes/_head.php';
